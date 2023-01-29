@@ -1,10 +1,11 @@
 phylosophers=[]
 
-phylosophers.append("Hegel")
-phylosophers.append("Ploti")
-phylosophers.append("Hume")
+phylosophers.append("hegel")
+phylosophers.append("ploti")
+phylosophers.append("hume")
 
-print(phylosophers)
-
-phylosophers.reverse()
-print(phylosophers)
+for phylosopher in phylosophers:
+    print (phylosopher.title() + ", alta idea")
+    print ("pensá más" + ".\n" )
+ 
+print("gracias totales".title())
