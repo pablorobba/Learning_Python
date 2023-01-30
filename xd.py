@@ -1,9 +1,9 @@
-dimentions = (200, 50)
-print("original dimentions:")
-for dimention in dimentions:
-    print( dimention)
-
-dimentions = (400,100)
-print("\n modified dimentions:")
-for dimention in dimentions:
-    print(dimention)
+filosofos = ["kant","nietzsche","aristotle"]
+filosofo = "marx"
+filosofo_2 = "kant" 
+if filosofo not in filosofos:
+    print(filosofo.title() + ",capo, vos no sos filosofo")
+if filosofo_2 in filosofos:
+    print(filosofo_2.title() + " vos sí sos")
+    
+    
