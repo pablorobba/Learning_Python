@@ -5,21 +5,22 @@ person_0 = {
     "city":"BsAs",
 }
 person_1 = {
-    "name":"Pablo",
-    "lastname": "Robba",
-    "age": "24",
-    "city":"BsAs",
+    "name":"Steve",
+    "lastname": "Vai",
+    "age": "58",
+    "city":"NY",
 }
 person_2 = {
-    "name":"Pablo",
-    "lastname": "Robba",
-    "age": "24",
-    "city":"BsAs",
+    "name":"John",
+    "lastname": "Petrucci",
+    "age": "56",
+    "city":"NY",
 }
 
+people = [person_0,person_1,person_2]
 
-
-print ("Your name is " + person["name"])
-print ("Your lastname is " + person["lastname"])
-print ("Your age is " + person["age"])
-print ("You live in " + person["city"])
+for person in people:
+    print("\n" + person["name"])
+    print("\n" + person["lastname"])
+    print("\n" + person["age"])
+    print("\n" + person["city"])
