@@ -1,14 +1,7 @@
-favorite_languages = {
- 'jen': ['python', 'ruby'],
- 'sarah': ['c'],
- 'edward': ['ruby', 'go'],
- 'phil': ['python', 'haskell'],
- }
+number = input ("odd or even: ")
+number = int(number)
 
-for name, languages in favorite_languages.items():
-    if len(languages) > 1:
-        print("\n" + name.title() + "'s favorite languages are:")
-    else:
-        print("\n" + name.title() + "'s favorite languages is:")
-    for language in languages:
-        print("\t" + language.title())
+if number % 2 == 0:
+    print("\n The number is even")
+else:
+    print("\n The number is odd")
