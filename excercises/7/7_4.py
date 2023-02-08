@@ -1,11 +1,12 @@
-prompt = "\nI'll repeat what you write"
-prompt += "\nEnter 'quit' to end the program "
+prompt ="\nEnter the pizza topping you want!"
+prompt += "\nWrite 'quit' to stop "
 
 active = True
+
 while active:
     message = input(prompt)
     
     if message == "quit":
         active = False
     else:
-        print(message)
+        print("\nAdding " + message) 
