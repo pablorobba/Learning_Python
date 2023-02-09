@@ -1,11 +1,17 @@
-prompt = "\nI'll repeat what you write"
-prompt += "\nEnter 'quit' to end the program "
+responses ={}
+polling_active = True
 
-active = True
-while active:
-    message = input(prompt)
+while polling_active:
+    name = input("\nWhat is your name? ")
+    response = input("Which montain would you like to climb someday ")
     
-    if message == "quit":
-        active = False
-    else:
-        print(message)
+    responses [name] = response
+
+    repeat = input ("Would you like to continue answering? (yes/no) ")
+
+    if repeat == "no":
+     polling_active = False
+    
+print("\n POLL RESULTS:")
+for name, response in responses.items():
+    print (name + " would like to climb " + response + ".")
