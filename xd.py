@@ -1,17 +1,5 @@
-responses ={}
-polling_active = True
-
-while polling_active:
-    name = input("\nWhat is your name? ")
-    response = input("Which montain would you like to climb someday ")
+def greet_user(username):
+    """display a simple greeting"""
+    print("Hello!, " + username.title() + "!")
     
-    responses [name] = response
-
-    repeat = input ("Would you like to continue answering? (yes/no) ")
-
-    if repeat == "no":
-     polling_active = False
-    
-print("\n POLL RESULTS:")
-for name, response in responses.items():
-    print (name + " would like to climb " + response + ".")
+greet_user("Paul")
